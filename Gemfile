@@ -12,6 +12,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 # Scrivito Gems
 gem 'scrivito_sdk'
+gem 'scrivito_editors'
 
 group :development, :test do
   gem 'spring'
