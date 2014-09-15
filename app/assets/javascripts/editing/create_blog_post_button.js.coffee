@@ -30,7 +30,6 @@ jQuery ->
             _obj_class: 'BlogPost'
             _path: "#{prefixPath}/#{isoDate}"
             published_at: isoDate
-          ).done ->
-            # Our search needs some time to catch up with the CMS
-            setTimeout (-> scrivito.reload()), 1000
+          ).done (data) ->
+            window.location.href = "/#{data.id}"
 

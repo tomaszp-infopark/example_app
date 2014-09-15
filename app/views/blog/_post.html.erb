@@ -1,14 +1,12 @@
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <%= cms_tag :h2, post, :title %>
-    <div class="row">
-      <div class="col-md-6">
-        By <%= cms_tag :span, post, :author_name, class: 'edit-inline' %>
-      </div>
-      <div class="col-md-6 text-right">
-        <%= date_edit_tag post, :published_at %>
-      </div>
-    </div>
-  </div>
-  <%= cms_tag :div, post, :main_content, class: 'panel-body' %>
+<div>
+  <h3>
+    <%= link_to post.overview_headline, cms_path(post) %>
+    <small>
+      Published on <%= format_date(post[:published_at]) %>
+      <% if post.author_name.present? %>
+        by <%= post.author_name %>
+      <% end %>
+    </small>
+  </h3>
 </div>
+<hr/>

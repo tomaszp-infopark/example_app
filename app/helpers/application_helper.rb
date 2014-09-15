@@ -3,8 +3,12 @@ module ApplicationHelper
     options = options.reverse_merge(date_attributes)
 
     cms_tag(:span, obj_or_widget, attribute, options) do
-      obj_or_widget[attribute].try(:strftime, '%B %d, %Y')
+      format_date(obj_or_widget[attribute])
     end
+  end
+
+  def format_date(date)
+    date.try(:strftime, '%b %d, %Y')
   end
 
   private
