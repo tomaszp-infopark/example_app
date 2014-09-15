@@ -17,11 +17,17 @@
   <nav class="navbar navbar-default" role="navigation">
     <div class="container-fluid">
       <div class="navbar-header">
-        <%= link_to 'ScrivitoExample', cms_path(homepage), class: "navbar-brand" %>
+        <%= link_to sanitize(homepage.menu_title), cms_path(homepage),
+          class: "navbar-brand" %>
       </div>
 
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
+        <%= cms_tag_list :ul, homepage, :toclist, class: "nav navbar-nav" do |list, obj| %>
+
+          <% list.tag :li  do %>
+            <%= link_to sanitize(obj.menu_title), cms_path(obj) %>
+          <% end %>
+        <% end %>
       </div>
     </div>
   </nav>
