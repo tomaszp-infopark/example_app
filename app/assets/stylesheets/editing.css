@@ -1,4 +1,7 @@
 /*
  *= require scrivito
  *= require scrivito_editors
+ *= require_self
  */
+
+.edit-inline { display: inline-block; }
