@@ -6,4 +6,8 @@ class Obj < Scrivito::BasicObj
   def menu_title
     self[:title].presence || "[Empty Title]"
   end
+
+  def image?
+    false
+  end
 end
