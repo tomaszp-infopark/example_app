@@ -31,5 +31,6 @@ jQuery ->
             _path: "#{prefixPath}/#{isoDate}"
             published_at: isoDate
           ).done ->
-            scrivito.reload()
+            # Our search needs some time to catch up with the CMS
+            setTimeout (-> scrivito.reload()), 1000
 
