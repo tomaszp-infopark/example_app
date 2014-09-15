@@ -5,6 +5,12 @@ class CreateHomepage < ::Scrivito::Migration
       is_binary: false,
       attributes: [
         { name: 'main_content', type: 'widget' }
-      ])
+      ]
+    )
+
+    Homepage.create(
+      _path: '/',
+      title: 'Your ScrivitoExample',
+    )
   end
 end
