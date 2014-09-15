@@ -6,7 +6,7 @@ class Obj < Scrivito::BasicObj
   end
 
   def menu_title
-    self[:title].presence || "[Empty Title]"
+    self[:title].presence || self[:headline].presence || "[Empty Title]"
   end
 
   def description_for_editor

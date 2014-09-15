@@ -1,0 +1,29 @@
+<div class="row">
+  <div class="col-md-9">
+    <% if @search_results.present? %>
+      <%= content_tag :h1, "Search results for \"#{params[:q]}\"" %>
+      <%= render 'search_form', result_page: @obj, query: params[:q] %>
+
+      <ul class="list-unstyled">
+        <% @search_results.each do |result_obj| %>
+          <li>
+            <h3>
+              <%= link_to sanitize(result_obj.menu_title), cms_path(result_obj) %>
+            </h3>
+
+            <%= content_tag :p, search_result_text(result_obj, params[:q]) %>
+          </li>
+          <hr/>
+        <% end %>
+      </ul>
+    <% else %>
+      <%= content_tag :h1, "No results for \"#{params[:q]}\"" %>
+      <p>Try again:</p>
+
+      <%= render 'search_form', result_page: @obj, query: nil %>
+    <% end %>
+  </div>
+  <div class="col-md-3">
+    <%= cms_tag :div, @obj, :side_content %>
+  </div>
+</div>
