@@ -4,7 +4,8 @@ class CreateHomepage < ::Scrivito::Migration
       name: 'Homepage',
       is_binary: false,
       attributes: [
-        { name: 'main_content', type: 'widget' }
+        { name: 'main_content', type: 'widget' },
+        { name: 'child_order', type: 'referencelist' },
       ]
     )
 
