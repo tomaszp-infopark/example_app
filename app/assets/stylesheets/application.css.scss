@@ -1,7 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-.image-widget { width: 100% }
+.image-widget { max-width: 100% }
 
 /* Sticky footer */
 html, body {
