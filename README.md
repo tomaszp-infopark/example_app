@@ -13,8 +13,7 @@ You can just copy these settings from your dashboard at www.scrivito.com.
 To add the structure the app excepts into your CMS you have to run the migrations of the add using the following commands:
 
 ```
-bundle exec rake cms:migrate
-bundle exec rake cms:migrate:publish
+bundle exec rake cms:migrate cms:migrate:publish
 ```
 
 This will setup the cms to be used by the CMS and allows you to start editing right away. If you want to you can add your own content to the CMS, however if you want more of a head start we included some pages you can add to the cms using the following command:
@@ -22,6 +21,8 @@ This will setup the cms to be used by the CMS and allows you to start editing ri
 ```
 bundle exec rake seed_cms
 ```
+
+Please note that the content will not be available in the published workspace after the calling the `rake` task. You can find it in its own workspace called "Berlin Seed Content" and have to switch to this workspace before being able to see it.
 
 ## Example Content
 

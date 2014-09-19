@@ -1,6 +1,7 @@
 class SeedCms
   class << self
     def call
+      puts "Generating Example Content ..."
       workspace = Scrivito::Workspace.create(title: 'Berlin Seed Content')
       Scrivito::Workspace.current = workspace
 
@@ -14,6 +15,7 @@ class SeedCms
       capital_city_page = create_capital_city_page
 
       homepage.update(child_order: [capital_city_page, history_blog])
+      puts "Finished! You can view the content in its own workspace 'Berlin Seed Content'"
     end
 
     private
