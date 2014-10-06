@@ -1,8 +1,20 @@
 class SeedCms
   class << self
     def call
+      if existing_workspace = Scrivito::Workspace.find_by_title(workspace_title)
+        puts "The example content was previously generated."
+        print "Do you want to overwrite the existing content? (y/n) "
+
+        if STDIN.gets.downcase.start_with?('y')
+          existing_workspace.destroy
+        else
+          puts 'Aborting content generation.'
+          return
+        end
+      end
+
       puts "Generating Example Content ..."
-      workspace = Scrivito::Workspace.create(title: 'Berlin Seed Content')
+      workspace = Scrivito::Workspace.create(title: workspace_title)
       Scrivito::Workspace.current = workspace
 
       homepage = update_homepage
@@ -19,6 +31,10 @@ class SeedCms
     end
 
     private
+
+    def workspace_title
+      'Berlin Seed Content'
+    end
 
     def random_path_component
       SecureRandom.hex(16)
