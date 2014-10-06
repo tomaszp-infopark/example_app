@@ -1,4 +1,6 @@
-class CmsController < Scrivito::DefaultCmsController
+class CmsController < ApplicationController
+  include Scrivito::ControllerActions
+
   private
 
   def homepage

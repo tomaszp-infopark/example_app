@@ -1,12 +1,12 @@
-<%= cms_tag :h2, @obj, :headline %>
+<%= scrivito_tag :h2, @obj, :title %>
 <div class="row">
   <div class="col-md-6">
-    By <%= cms_tag :span, @obj, :author_name, class: 'edit-inline' %>
+    By <%= scrivito_tag :span, @obj, :author_name, class: 'edit-inline' %>
   </div>
   <div class="col-md-6 text-right">
     <%= date_edit_tag @obj, :published_at %>
   </div>
 </div>
 <hr/>
-  <%= cms_tag :div, @obj, :main_content, class: 'panel-body' %>
+  <%= scrivito_tag :div, @obj, :body, class: 'panel-body' %>
 </div>

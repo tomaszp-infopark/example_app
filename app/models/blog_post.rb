@@ -1,9 +1,9 @@
 class BlogPost < Obj
-  def overview_headline
-    self[:headline].presence || "[New Blog Post]"
+  def overview_title
+    self[:title].presence || "[New Blog Post]"
   end
 
   def menu_title
-    self[:title].presence || overview_headline
+    self[:page_title].presence || overview_title
   end
 end

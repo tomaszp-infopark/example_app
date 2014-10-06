@@ -2,10 +2,7 @@ class CreateTextWidget < ::Scrivito::Migration
   def up
     Scrivito::ObjClass.create(
       name: 'TextWidget',
-      is_binary: false,
-      attributes: [
-        { name: 'content', type: :html },
-      ]
+      attributes: [{ name: 'text', type: :html }]
     )
   end
 end

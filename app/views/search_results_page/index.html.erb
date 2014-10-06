@@ -7,7 +7,7 @@
         <% @search_results.each do |result_obj| %>
           <li>
             <h3>
-              <%= link_to sanitize(result_obj.menu_title), cms_path(result_obj) %>
+              <%= link_to sanitize(result_obj.menu_title), scrivito_path(result_obj) %>
             </h3>
 
             <%= content_tag :p, search_result_text(result_obj, params[:q]) %>
@@ -20,6 +20,6 @@
     <% end %>
   </div>
   <div class="col-md-3">
-    <%= cms_tag :div, @obj, :side_content %>
+    <%= scrivito_tag :div, @obj, :side_content %>
   </div>
 </div>

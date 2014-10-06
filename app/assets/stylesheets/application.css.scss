@@ -1,5 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "scrivito_sdk";
+@import "scrivito_editors";
 
 .image-widget { max-width: 100% }
 
@@ -26,3 +28,7 @@ html, body {
 
   p.text-muted { margin: 20px 0; }
 }
+
+.scrivito_editing_active .edit-inline { display: inline-block; }
+
+i.icon.editing-icon { font-size: 65px; }
