@@ -1,6 +1,7 @@
 # Scrivito Example App
 
 ## Configuration
+
 All you need to is create a new file `.env` located in the root of your rails app with the following content:
 
 ```
@@ -8,27 +9,27 @@ SCRIVITO_TENANT=<your-tenant-name>
 SCRIVITO_API_KEY=<your-api-key>
 ```
 
-You can just copy these settings from your dashboard at www.scrivito.com.
+You can just copy these settings from your dashboard at www.scrivito.com/dashboard.
 
-To add the structure the app excepts into your CMS you have to run the migrations of the add using the following commands:
+The app expects a certain content structure in the CMS. This structure is created using migrations, similar to the ActiveRecord migrations that create database tables. You can execute the migrations using this command:
 
 ```
-bundle exec rake cms:migrate cms:migrate:publish
+bundle exec rake scrivito:migrate scrivito:migrate:publish
 ```
 
-This will setup the cms to be used by the CMS and allows you to start editing right away. If you want to you can add your own content to the CMS, however if you want more of a head start we included some pages you can add to the cms using the following command:
+This will setup the content to be used by the CMS and allows you to start editing right away. You can add your own content to the CMS, however if you want more of a head start we included a small set of pages for you to get going. You can add this content by running:
 
 ```
 bundle exec rake seed_cms
 ```
 
-Please note that the content will not be available in the published workspace after the calling the `rake` task. You can find it in its own workspace called "Berlin Seed Content" and have to switch to this workspace before being able to see it.
+Please note that the content will not be available in the published workspace after calling the `rake` task. You can find it in its own workspace called "Berlin Seed Content" and have to switch to this workspace before being able to see it.
 
 ## Example Content
 
-The example content was taken from wikipedia from the articles: http://en.wikipedia.org/wiki/Berlin and 
+The example text content was taken from the wikipedia articles: [Berlin](http://en.wikipedia.org/wiki/Berlin) and [History of Berlin](http://en.wikipedia.org/wiki/History_of_Berlin).
 
-
+In addition the following pictures were used:
 
 - `lib/seed_data/brandenburg_gate.jpg`
 "Brandenburg Gate panorama at night" by Runner1928 - Own work. Licensed under Creative Commons Attribution-Share Alike 3.0 via Wikimedia Commons - [See](http://commons.wikimedia.org/wiki/File:Brandenburg_Gate_panorama_at_night.jpg#mediaviewer/File:Brandenburg_Gate_panorama_at_night.jpg)

@@ -57,8 +57,8 @@ class SeedCms
 
       inner_columns = TwoColumnWidget.new(
         column1_width: 6,
-        column1_content: [TextWidget.new(content: texts['berlin_introduction'])],
-        column2_content: [ImageWidget.new(source: siegessaeule_img)]
+        column1_content: [TextWidget.new(text: texts['berlin_introduction'])],
+        column2_content: [ImageWidget.new(image: siegessaeule_img)]
       )
 
       outer_columns = TwoColumnWidget.new(
@@ -69,14 +69,14 @@ class SeedCms
         ],
         column2_content: [
           HeadlineWidget.new(headline: 'Content'),
-          TextWidget.new(content: texts['content_disclaimer'])
+          TextWidget.new(text: texts['content_disclaimer'])
         ]
       )
 
       homepage.update(
         title: 'Berlin',
-        main_content: [
-          ImageWidget.new(source: brandenburg_img),
+        body: [
+          ImageWidget.new(image: brandenburg_img),
           outer_columns
         ]
       )
@@ -87,7 +87,6 @@ class SeedCms
     def create_history_blog
       Blog.create(
         _path: "/#{random_path_component}",
-        headline: 'History of Berlin',
         title: 'History Blog'
       )
     end
@@ -99,18 +98,17 @@ class SeedCms
         column1_width: 8,
         column1_content: [
           HeadlineWidget.new(headline: 'Emerging city (1200-1400)'),
-          TextWidget.new(content: texts['founding'])
+          TextWidget.new(text: texts['founding'])
         ],
-        column2_content: [ImageWidget.new(source: old_map_img)]
+        column2_content: [ImageWidget.new(image: old_map_img)]
       )
 
       BlogPost.create(
         _path: "#{blog.path}/#{random_path_component}",
-        title: 'Founding',
-        headline: 'The Founding of Berlin',
+        title: 'The Founding of Berlin',
         published_at: Date.new(1237, 1, 1),
         author_name: 'wikipedia',
-        main_content: [main_columns]
+        body: [main_columns]
       )
     end
 
@@ -119,20 +117,19 @@ class SeedCms
 
       main_columns = TwoColumnWidget.new(
         column1_width: 4,
-        column1_content: [ImageWidget.new(source: berlin_wall_img)],
+        column1_content: [ImageWidget.new(image: berlin_wall_img)],
         column2_content: [
-          TextWidget.new(content: texts['berlin_wall1']),
-          TextWidget.new(content: texts['berlin_wall2'])
+          TextWidget.new(text: texts['berlin_wall1']),
+          TextWidget.new(text: texts['berlin_wall2'])
         ]
       )
 
       BlogPost.create(
         _path: "#{blog.path}/#{random_path_component}",
-        title: 'Berlin Wall Construction',
-        headline: 'Construction of the Berlin Wall',
+        title: 'Construction of the Berlin Wall',
         published_at: Date.new(1961, 8, 13),
         author_name: 'wikipedia',
-        main_content: [main_columns]
+        body: [main_columns]
       )
     end
 
@@ -143,18 +140,17 @@ class SeedCms
         column1_width: 8,
         column1_content: [
           HeadlineWidget.new(headline: 'The Fall of the Berlin Wall'),
-          TextWidget.new(content: texts['reunification'])
+          TextWidget.new(text: texts['reunification'])
         ],
-        column2_content: [ImageWidget.new(source: reunification_img)]
+        column2_content: [ImageWidget.new(image: reunification_img)]
       )
 
       BlogPost.create(
         _path: "#{blog.path}/#{random_path_component}",
-        title: 'Reunification',
-        headline: 'Reunification of Berlin',
+        title: 'Reunification of Berlin',
         published_at: Date.new(1989, 11, 9),
         author_name: 'wikipedia',
-        main_content: [main_columns]
+        body: [main_columns]
       )
     end
 
@@ -165,15 +161,15 @@ class SeedCms
         column1_width: 5,
         column1_content: [
           HeadlineWidget.new(headline: 'Capital of Germany'),
-          TextWidget.new(content: texts['capital_city'])
+          TextWidget.new(text: texts['capital_city'])
         ],
-        column2_content: [ImageWidget.new(source: reichstag_img)]
+        column2_content: [ImageWidget.new(image: reichstag_img)]
       )
 
       Page.create(
         _path: "/#{random_path_component}",
         title: 'Capital City',
-        main_content: [main_columns]
+        body: [main_columns]
       )
     end
 

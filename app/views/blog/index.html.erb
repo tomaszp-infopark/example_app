@@ -1,5 +1,5 @@
 <%= content_tag :div, id: "blog", data: { path: @obj.path } do %>
-  <%= cms_tag :h1, @obj, :headline %>
+  <%= scrivito_tag :h1, @obj, :title %>
 
   <div class="blog_posts">
     <%= render partial: 'post', collection: @blog_posts %>
