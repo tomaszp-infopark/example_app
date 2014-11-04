@@ -25,12 +25,4 @@ describe Obj do
       end
     end
   end
-
-  describe '#image?' do
-    subject { Obj.new }
-
-    it 'is not an image' do
-      expect(subject.image?).to be_falsey
-    end
-  end
 end

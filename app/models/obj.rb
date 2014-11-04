@@ -12,8 +12,4 @@ class Obj < Scrivito::BasicObj
   def description_for_editor
     strip_tags(menu_title)
   end
-
-  def image?
-    false
-  end
 end
