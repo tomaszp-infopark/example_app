@@ -12,7 +12,7 @@ module ApplicationHelper
   end
 
   def editing_icon(html_class)
-    content_tag(:i, '', class: "icon editing-icon #{html_class}")
+    content_tag(:i, '', class: "icon glyphicon glyphicon-#{html_class}")
   end
 
   private

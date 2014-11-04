@@ -1,14 +1,6 @@
 require 'rails_helper'
 
 describe Image do
-  describe '#image?' do
-    subject { Image.new }
-
-    it 'is an image' do
-      expect(subject.image?).to be_truthy
-    end
-  end
-
   describe '#menu_title & #description_for_editor' do
     context 'if title is not set' do
       subject { Image.new(_path: '/my/path/filename.jpg') }
