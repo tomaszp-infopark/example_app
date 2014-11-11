@@ -14,7 +14,7 @@ class SeedCms
       end
 
       puts "Generating Example Content ..."
-      workspace = Scrivito::Workspace.create(title: workspace_title)
+      workspace = Scrivito::Workspace.create(id: 'rtc')
       Scrivito::Workspace.current = workspace
 
       homepage = update_homepage
