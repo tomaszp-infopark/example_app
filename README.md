@@ -1,6 +1,6 @@
 # Scrivito Example App
 
-## Configuration
+## Basic setup
 
 All you need is to create a new file named `.env` located in the root of your
 rails app and add the following content to it:
@@ -20,7 +20,9 @@ database tables. You can execute the migrations using this command:
 bundle exec rake scrivito:migrate scrivito:migrate:publish
 ```
 
-This will set up the content to be used by the CMS and allows you to start
+## Example Content
+
+The above will set up the content to be used by the CMS and allows you to start
 editing right away. You can add your own content to the CMS, however if you
 want more of a head start, we included a small set of pages for you to get
 going. You can add this content by running:
@@ -34,10 +36,8 @@ after calling the `rake` task. You can find it in its own workspace called
 "Berlin Seed Content" and need to switch to this workspace before being able
 to see it.
 
-## Example Content
-
 The example text content was taken from the wikipedia articles:
-[Berlin](http://en.wikipedia.org/wiki/Berlin) and 
+[Berlin](http://en.wikipedia.org/wiki/Berlin) and
 [History of Berlin](http://en.wikipedia.org/wiki/History_of_Berlin).
 
 Additionally, the following pictures were used:
