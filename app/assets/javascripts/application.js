@@ -2,6 +2,7 @@
 //= require jquery_ujs
 //= require scrivito_sdk
 //= require scrivito_editors
+//= require fiona7
 //= require_tree .
 
 (function() {
