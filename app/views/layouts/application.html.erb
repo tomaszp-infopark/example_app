@@ -13,8 +13,12 @@
   <div id="wrap">
     <%= render 'layouts/navigation' %>
 
-    <div class="container-fluid">
-      <%= yield %>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <%= yield %>
+        </div>
+      </div>
     </div>
   </div>
 
