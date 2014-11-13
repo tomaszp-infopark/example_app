@@ -22,7 +22,7 @@ bundle exec rake scrivito:migrate scrivito:migrate:publish
 
 ## Example Content
 
-The above will set up the content to be used by the CMS and allows you to start
+The migrations above will set up the content to be used by the application and allow you to start
 editing right away. You can add your own content to the CMS, however if you
 want more of a head start, we included a small set of pages for you to get
 going. You can add this content by running:
