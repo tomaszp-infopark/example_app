@@ -1,7 +1,8 @@
 //= require jquery
 //= require jquery_ujs
-//= require scrivito_sdk
+//= require scrivito
 //= require scrivito_editors
+//= require scrivito_content_browser
 //= require_tree .
 
 (function() {
