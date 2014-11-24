@@ -16,6 +16,11 @@ SCRIVITO_TENANT=<your-tenant-name>
 SCRIVITO_API_KEY=<your-api-key>
 ```
 
+The example app uses [dotenv](https://github.com/bkeepers/dotenv) to load the ENV
+variables that Scrivito needs in `development` and `test` mode. If you want to start
+it in `production` or deploy it to heroku you have to take care of setting the ENV
+variables yourself.
+
 You can just copy these settings from your dashboard at www.scrivito.com/dashboard.
 
 The app expects a specific content structure in the CMS. This structure is
