@@ -2,8 +2,14 @@
 
 ## Basic setup
 
-All you need is to create a new file named `.env` located in the root of your
-rails app and add the following content to it:
+First of all you need to install the dependencies of the app with the following command:
+
+```
+bundle install
+```
+
+To configure the cms you need to create a new file named `.env` located in the 
+root of your rails app and add the following content to it:
 
 ```
 SCRIVITO_TENANT=<your-tenant-name>
