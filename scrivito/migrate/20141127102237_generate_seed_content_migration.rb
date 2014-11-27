@@ -20,9 +20,8 @@ class GenerateSeedContentMigration < ::Scrivito::Migration
 
   def create_image(file_name)
     file = File.new(Rails.root.join('lib/seed_data/', file_name))
-    path = "/#{random_path_component}/#{file_name}"
 
-    Image.create(_path: path, blob: file)
+    Image.create(blob: file)
   end
 
   def update_homepage
