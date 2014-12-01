@@ -6,6 +6,7 @@ PATH
       infopark_reactor (= 1.11.0.beta3)
       rails
       scrivito (~> 0.30)
+      scrivito_editors
       scrivito_sdk
 
 GEM
