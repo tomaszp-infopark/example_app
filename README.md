@@ -33,19 +33,11 @@ bundle exec rake scrivito:migrate scrivito:migrate:publish
 
 ## Example Content
 
-The migrations above will set up the content to be used by the application and allow you to start
-editing right away. You can add your own content to the CMS, however if you
-want more of a head start, we included a small set of pages for you to get
-going. You can add this content by running:
+The migrations also generate some example pages so the app is not empty when you first start it. If you want to start with a blank CMS and do your own thing just delete the migration-file:
 
 ```
-bundle exec rake seed_cms
+scrivito/migrate/20141127102237_generate_seed_content_migration.rb
 ```
-
-Please note that the content will not be available in the published workspace
-after calling the `rake` task. You can find it in its own workspace called
-"Berlin Seed Content" and need to switch to this workspace before being able
-to see it.
 
 The example text content was taken from the wikipedia articles:
 [Berlin](http://en.wikipedia.org/wiki/Berlin) and
