@@ -6,3 +6,5 @@ scrivito.on 'load', ->
       options:
         Image:
           icon: 'image'
+        Download:
+          icon: 'generic'
