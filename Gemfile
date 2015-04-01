@@ -15,7 +15,7 @@ gem 'scrivito', '0.30.0'
 gem 'scrivito_sdk'
 gem 'scrivito_editors'
 
-gem 'fiona7', :path => '../../'
+gem 'infopark_fiona7', :path => '../../'
 
 group :development, :test do
   gem 'spring'
