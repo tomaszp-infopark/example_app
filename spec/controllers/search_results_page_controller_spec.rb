@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe SearchResultsPageController do
-  let(:obj) { Obj.new({}) }
+  let(:obj) { Obj.new }
 
   before do
     request.for_scrivito_obj(obj)
