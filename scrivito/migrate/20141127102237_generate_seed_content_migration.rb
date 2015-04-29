@@ -1,5 +1,7 @@
 class GenerateSeedContentMigration < ::Scrivito::Migration
   def up
+    Scrivito::ObjClass.remove
+
     homepage = create_homepage
 
     history_blog = create_history_blog
