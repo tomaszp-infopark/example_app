@@ -1,5 +1,7 @@
 # Scrivito Example App
 
+![Example App Screenshot](example_app_screenshot.jpg)
+
 ## Basic setup
 
 First of all you need to install the dependencies of the app with the following command:
