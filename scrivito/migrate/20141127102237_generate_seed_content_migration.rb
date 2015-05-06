@@ -1,6 +1,8 @@
 class GenerateSeedContentMigration < ::Scrivito::Migration
   def up
-    homepage = update_homepage
+    Scrivito::ObjClass.remove
+
+    homepage = create_homepage
 
     history_blog = create_history_blog
     create_founding_page(history_blog)
@@ -24,8 +26,17 @@ class GenerateSeedContentMigration < ::Scrivito::Migration
     Image.create(blob: file)
   end
 
-  def update_homepage
-    homepage = Homepage.find_by_path('/')
+  def create_homepage
+    search_page = SearchResultsPage.create(
+      _path: '/_global/search',
+      title: 'Search Results',
+    )
+
+    homepage = Homepage.create(
+      _path: '/',
+      search_result_page: search_page,
+      title: 'Your ScrivitoExample',
+    )
 
     brandenburg_img = create_image('brandenburg_gate.jpg')
 
