@@ -2,7 +2,7 @@ class Obj < Scrivito::BasicObj
   include ActionView::Helpers::SanitizeHelper
 
   def self.valid_page_classes_beneath(parent_path)
-    ['Page', 'Blog']
+    [Page, Blog]
   end
 
   def menu_title

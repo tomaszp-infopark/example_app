@@ -12,7 +12,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass', '~> 3.2.0'
 
 # Scrivito Gems
-gem 'scrivito', '0.65.0'
+gem 'scrivito', '0.66.0'
 
 group :development, :test do
   gem 'spring'
@@ -22,4 +22,3 @@ group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
 end
-
