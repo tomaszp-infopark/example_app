@@ -15,7 +15,6 @@ gem 'bootstrap-sass', '~> 3.2.0'
 gem 'scrivito', '0.66.0'
 
 group :development, :test do
-  gem 'spring'
   gem 'pry-rails'
   gem 'dotenv-rails'
   gem 'rspec-rails'
