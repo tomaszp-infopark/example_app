@@ -13,6 +13,7 @@ gem 'bootstrap-sass', '~> 3.2.0'
 
 # Scrivito Gems
 gem 'scrivito', '0.66.0'
+gem 'infopark_fiona7', path: '../../'
 
 group :development, :test do
   gem 'pry-rails'
