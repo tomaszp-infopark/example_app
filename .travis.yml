@@ -1,6 +1,7 @@
 ---
 language: ruby
-rvm:
-  - 2.1.1
+cache: bundler
+sudo: false
+rvm: 2.1.5
 script:
   - bundle exec rake spec --trace
