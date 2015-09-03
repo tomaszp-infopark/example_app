@@ -4,7 +4,7 @@ class CmsController < ApplicationController
   private
 
   def homepage
-    Obj.homepage
+    Obj.root
   end
   helper_method :homepage
 end
