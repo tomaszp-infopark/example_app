@@ -1,5 +1,6 @@
 class GenerateSeedContentMigration < ::Scrivito::Migration
   def up
+    assert_tenant_is_empty
     homepage = create_homepage
 
     history_blog = create_history_blog
@@ -13,6 +14,13 @@ class GenerateSeedContentMigration < ::Scrivito::Migration
   end
 
   private
+
+  def assert_tenant_is_empty
+    if Obj.all.to_a.present?
+      fail "The example app expects the tenant to be empty, however, yours "\
+        "contains data. Please ensure that your tenant is empty."
+    end
+  end
 
   def random_path_component
     SecureRandom.hex(16)

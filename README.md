@@ -33,6 +33,11 @@ database tables. You can execute the migrations using this command:
 bundle exec rake scrivito:migrate scrivito:migrate:publish
 ```
 
+Please note, the migrations require the tenant to be empty. If your tenant only contains data
+that is disposable, you can delete your existing tenant and create another one from scratch
+using the dashboard at [scrivito.com](https://scrivito.com/dashboard). The new tenant will
+have new credentials, so you will have to update the configuration file.
+
 ## Example Content
 
 The migrations also generate some example pages so the app is not empty when you first start it. If you want to start with a blank CMS and do your own thing just delete the migration-file:
