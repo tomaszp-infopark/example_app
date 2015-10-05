@@ -17,7 +17,7 @@ class GenerateSeedContentMigration < ::Scrivito::Migration
 
   def assert_tenant_is_empty
     if Obj.all.to_a.present?
-      fail "The example app expects the tenant to be empty, however, yours "\
+      fail "The example app expects the tenant to be empty, yours, however, "\
         "contains data. Please ensure that your tenant is empty."
     end
   end
