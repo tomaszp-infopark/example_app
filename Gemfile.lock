@@ -1,9 +1,10 @@
 PATH
   remote: ../../
   specs:
-    infopark_fiona7 (0.66.0.0.pre.alpha4)
+    infopark_fiona7 (0.70.0.4)
       infopark_fiona_connector (= 7.0.1.beta2)
-      infopark_reactor (= 1.14.0.beta2)
+      infopark_reactor (= 1.15.0.beta1)
+      mini_magick
       rails (~> 4.2.2)
       scrivito (= 0.70.0.rc1)
       scrivito_editors
@@ -92,7 +93,7 @@ GEM
       rails (~> 4.2)
       rake (>= 10.3.2)
       rsolr (~> 1.0.10)
-    infopark_reactor (1.14.0.beta2)
+    infopark_reactor (1.15.0.beta1)
       nokogiri
       rails (>= 3.0.10, < 4.3.0)
       term-ansicolor
@@ -113,6 +114,7 @@ GEM
     memoist (0.12.0)
     method_source (0.8.2)
     mime-types (1.25.1)
+    mini_magick (4.3.6)
     mini_portile (0.6.2)
     minitest (5.8.0)
     multi_json (1.11.2)
@@ -158,7 +160,7 @@ GEM
     rake (10.4.2)
     rdoc (4.2.0)
       json (~> 1.4)
-    rsolr (1.0.12)
+    rsolr (1.0.13)
       builder (>= 2.1.2)
     rspec-core (3.3.2)
       rspec-support (~> 3.3.0)
