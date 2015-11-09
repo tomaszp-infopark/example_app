@@ -148,23 +148,23 @@ GEM
       sass (~> 3.2.2)
       sprockets (~> 2.8, < 3.0)
       sprockets-rails (~> 2.0)
-    scrivito (0.70.0)
+    scrivito (0.71.2)
       railties
-      scrivito_content_browser (= 0.70.0)
-      scrivito_editors (= 0.70.0)
-      scrivito_sdk (= 0.70.0)
-    scrivito_content_browser (0.70.0)
+      scrivito_content_browser (= 0.71.2)
+      scrivito_editors (= 0.71.2)
+      scrivito_sdk (= 0.71.2)
+    scrivito_content_browser (0.71.2)
       coffee-rails
       railties
-      scrivito_sdk (= 0.70.0)
-    scrivito_editors (0.70.0)
+      scrivito_sdk (= 0.71.2)
+    scrivito_editors (0.71.2)
       coffee-rails
       coffee-script-source (>= 1.9.1)
       jquery-ui-rails (>= 5.0.0)
       railties
-      scrivito_content_browser (= 0.70.0)
-      scrivito_sdk (= 0.70.0)
-    scrivito_sdk (0.70.0)
+      scrivito_content_browser (= 0.71.2)
+      scrivito_sdk (= 0.71.2)
+    scrivito_sdk (0.71.2)
       addressable (~> 2.3.2)
       diff-lcs (~> 1.2.5)
       hyp_diff (~> 0.0.4)
@@ -220,7 +220,7 @@ DEPENDENCIES
   rails
   rspec-rails
   sass-rails (~> 4.0.4)
-  scrivito (= 0.70.0)
+  scrivito (= 0.71.2)
   sdoc (~> 0.4.0)
   secure_headers
   spring
