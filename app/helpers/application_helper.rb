@@ -14,6 +14,11 @@ module ApplicationHelper
   private
 
   def date_attributes
-    { data: { 'date-format' => 'MM dd, yy', 'time-format' => ' ' } }
+    {
+      data: {
+        scrivito_editors_date_format: 'MM dd, yy',
+        scrivito_editors_time_format: ' ',
+      }
+    }
   end
 end
