@@ -13,7 +13,7 @@ gem 'secure_headers'
 gem 'bootstrap-sass', '~> 3.2.0'
 
 # Scrivito Gems
-gem 'scrivito', '0.71.2'
+gem 'scrivito', '0.90.0'
 
 group :development, :test do
   gem 'spring'

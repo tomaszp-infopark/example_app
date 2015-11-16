@@ -1,3 +1,4 @@
 <%= scrivito_details_for 'Column width' do %>
-  <%= scrivito_tag :div, widget, :column1_width, data: { editor: 'slider', max: '11' } %>
+  <%= scrivito_tag :div, widget, :column1_width, {data: {scrivito_editors_max: '11' }},
+    editor: 'slider' %>
 <% end %>
