@@ -1,0 +1,9 @@
+<%= scrivito_details_for 'Bild' do %>
+  <%= scrivito_image_tag widget, :image %>
+<% end %>
+<%= scrivito_details_for 'Teaser-Typ' do %>
+  <%= scrivito_edit_enum widget, :teaser_type %>
+<% end %>
+<%= scrivito_details_for 'Weiterführender Link' do %>
+  <%= scrivito_edit_link widget, :related_link %>
+<% end %>

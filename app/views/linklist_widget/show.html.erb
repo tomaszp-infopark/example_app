@@ -1,0 +1,11 @@
+<% if widget.related_links.empty? %>
+  Keine Links vorhanden.
+<% else %>
+  <ul class="linkList">
+    <% widget.related_links.each do |link| %>
+      <li>
+      <%= link_to (content_tag(:i, '', class: 'fa fa-angle-right') + link.title), scrivito_path(link) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>

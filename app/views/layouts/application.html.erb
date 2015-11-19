@@ -1,34 +1,754 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Fiona 7 Example</title>
-  <%= scrivito_head_tags %>
+<!-- saved from url=(0053)http://fiona-dev.uni-frankfurt.de/54423261/Testseiten -->
+<html class=" js no-touch svg inlinesvg svgclippaths no-ie8compat"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-  <%= stylesheet_link_tag    'application', media: 'all' %>
-  <%= javascript_include_tag 'application' %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-  <%= scrivito_body_tags %>
-  <div id="wrap">
-    <%= render 'layouts/navigation' %>
+<title>
+  Goethe-Universität — Prototyp
+</title>
+<!-- meta -->
+<meta content="Die Goethe-Universität ist eine forschungsstarke Hochschule in der europäischen Finanzmetropole Frankfurt. Lebendig, urban und weltoffen besitzt sie als Stiftungsuniversität ein einzigartiges Maß an Eigenständigkeit." name="description">
+<meta content="keywords" name="keywords">
+<meta content="copyright" name="copyright">
+<meta content="5days" name="revisit-after">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<meta content="index, follow" name="robots">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<!-- Asset-Pipeline -->
 
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <%= yield %>
+<%= scrivito_head_tags %>
+
+<%= stylesheet_link_tag    'application', media: 'all' %>
+<%= javascript_include_tag 'modernizr' %>
+<%= javascript_include_tag 'application' %>
+<%= csrf_meta_tags %>
+
+
+<!-- / IE 8 foo -->
+<!--[if lt IE 9]>
+<![endif]-->
+<!-- local headers -->
+
+<meta class="foundation-mq-small"><meta class="foundation-mq-medium"><meta class="foundation-mq-large"><style></style></head>
+<body data-page-class="portalstartpage">
+<%= scrivito_body_tags %>
+
+<!-- / Top anchor -->
+<a id="top" name="top"></a>
+
+<!-- /header on start-page -->
+<div class="row brand-header header subpage">
+  <div class="small-12 columns" id="header-inner-wrapper">
+    <div class="row">
+      <div class="large-3 small-12 columns" id="logo">
+        <div class="head_logo_wrapper">
+          <a href="<%= scrivito_path(homepage) %>" title="Homepage">
+            <img alt="Head_logo" class="brand" src="/assets//head_logo-780d87501c0696f3478bd2d708bde936.svg">
+          </a>
+        </div>
+      </div>
+      <div class="large-3 medium-6 push-6 columns" id="header-right">
+        <ul class="metaNavigation inline-list hide-for-small">
+          <li class="barrierLink">
+          <a href="http://www.uni-frankfurt.de/aktuelles" title="Hier gehts zur alten Webseite">zur alten Webseite</a>
+          </li>
+          <li class="printLink">
+          <a href="#" title="Seite drucken">
+            <i class="fa fa-print"></i>
+          </a>
+          </li>
+          <li class="socialLinks">
+          <a class="rss" href="http://fiona-dev.uni-frankfurt.de/rss/34459651?channels=pressreleases" title="RSS">
+            <i class="fa fa-rss"></i>
+          </a>
+          <a class="facebook" href="http://www.facebook.com/pages/Goethe-Universit%C3%A4t-Frankfurt/123002533912?sk=wall" title="FACEBOOK">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a class="twitter" href="http://www.twitter.com/goetheuni" title="Twitter">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a class="flickr" href="http://www.flickr.com/photos/goethe-uni/sets/72157621212525982/" title="Flickr">
+            <i class="fa fa-flickr"></i>
+          </a>
+          </li>
+        </ul>
+        <!--
+hide barrierNavigation
+<haml_loud> form_tag(short_cuts_path, :method=> :post, :class => 'barrierNavigation') do </haml_loud><haml_block>
+<haml_loud> hidden_field_tag("return_path", cms_path(@obj)) </haml_loud>
+<haml_loud> select_tag('site', options_for_select(options_for_short_cuts), :size => 1 ) </haml_loud>
+<haml_loud> submit_tag("GO", :class => "submit") </haml_loud>
+</haml_block>        hide barrierNavigation
+-->
+        <div class="searchField">
+          <form accept-charset="UTF-8" action="http://fiona-dev.uni-frankfurt.de/search" class="search-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"></div>
+            <input class="search" id="search_input" name="q" placeholder="Suchbegriff" type="text">
+            <div class="go-button">
+              <i class="fa fa-angle-right"></i>
+              <input class="submit hide-for-small" name="commit" type="submit" value="Go">
+            </div>
+          </form>
+
+          <div class="clear"></div>
+        </div>
+        <ul class="subNavigation inline-list hide-for-small">
+          <li>
+          <a href="http://webmail.uni-frankfurt.de/" title="Webmail">
+            <i class="fa fa-angle-right"></i>
+            Webmail
+          </a>
+          </li>
+          <li>
+          <a href="http://fiona-dev.uni-frankfurt.de/intranet" title="Beschäftigte">
+            <i class="fa fa-angle-right"></i>
+            Beschäftigte
+          </a>
+          </li>
+          <li>
+          <a href="http://fiona-dev.uni-frankfurt.de/sitemap" title="Sitemap">
+            <i class="fa fa-angle-right"></i>
+            Sitemap
+          </a>
+          </li>
+        </ul>
+      </div>
+      <div class="large-6 pull-3 small-12 columns" id="header-department">
+        <h1 class="department">
+          <span class="department-title"><a href="/assets//Goethe-Universität — Testseiten.html">Testseiten</a></span>
+          <br>
+          <span class="departmentName"><a href="/assets//Goethe-Universität — Testseiten.html">Fachbereich</a></span>
+          <span class="departmentNumber"><a href="/assets//Goethe-Universität — Testseiten.html">00</a></span>
+        </h1>
+        <a href="/assets//Goethe-Universität — Testseiten.html" class="department-logo"><img alt="Logo" src="/assets//Logo2.png"></a>
+      </div>
+
+      <div class="social-media-icons-small medium-12 small-12 columns">
+        <ul class="socialLinks inline-list">
+          <li>
+          <a>
+            <i class="fa fa-rss" href="/rss/34459651?channels=pressreleases" title="RSS"></i>
+          </a>
+          </li>
+          <li>
+          <a>
+            <i class="fa fa-facebook" href="http://www.facebook.com/pages/Goethe-Universit%C3%A4t-Frankfurt/123002533912?sk=wall" title="FACEBOOK"></i>
+          </a>
+          </li>
+          <li>
+          <a>
+            <i class="fa fa-twitter" href="http://www.twitter.com/goetheuni" title="Twitter"></i>
+          </a>
+          </li>
+          <li>
+          <a>
+            <i class="fa fa-flickr" href="http://www.flickr.com/photos/goethe-uni/sets/72157621212525982/" title="Flickr"></i>
+          </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row main-wrapper">
+  <div class="large-12 columns content">
+    <!-- Hauptnavigation begin -->
+    <nav class="top-bar">
+      <ul class="title-area">
+        <!-- Title Area -->
+        <li class="name"></li>
+        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+        <li class="toggle-topbar menu-icon">
+        <a href="http://fiona-dev.uni-frankfurt.de/54423261/Testseiten#">
+          <span></span>
+        </a>
+        </li>
+      </ul>
+
+      <section class="top-bar-section">
+        <%= scrivito_tag_list :ul, homepage, :toclist, class: "left" do |list, obj| %>
+          <% counter = 0 %>
+          <% css_class = "first" if counter == 0 %>
+          <% css_class = "last" if counter == (homepage.toclist.length - 1) %>
+          <% list.tag :li, {class: css_class}  do %>
+            <%= link_to sanitize(obj.menu_title), scrivito_path(obj) %>
+          <% end %>
+          <% counter = counter + 1 %>
+        <% end %>
+
+    </section></nav>
+    <!-- Hauptnavigation Ende -->
+
+    <div class="display main">
+      <div class="columns large-9 main-wrapper <%= @obj.css_class rescue "" %>">
+        <div class="row">
+          <% if (@obj.show_navigation? rescue false) %>
+            <div class="large-12 columns main-content-outer-wrap">
+              <div class="columns context-nav large-3 medium-3">
+                <%= render partial: 'layouts/navigation' %>
+              </div>
+              <div class="columns contentbox-inner large-9 medium-9 small-12">
+                <%= yield %>
+              </div>
+            </div>
+          <% else %>
+            <div class="large-12 columns">
+              <%= yield %>
+            </div>
+          <% end %>
+        </div>
+
+      </div>
+      <div class="columns large-3 sidebar variation_2">
+        <!-- sidebar start -->
+        <div class="section-container sidebar-teaser" data-options="one_up: false" data-section="accordion">
+          <%= scrivito_tag :div, @obj, :right_column %>
+          <!-- sidebar end -->
         </div>
       </div>
     </div>
   </div>
-
-  <div class="footer">
-    <div class="container">
-      <p class="text-muted">
-        View additional information at
-        <a href="https://www.scrivito.com">scrivito.com</a>.
-      </p>
+</div>
+<!-- / Footer Desktop - View -->
+<footer class="show-for-medium-up">
+  <div class="row band footer-links">
+    <div class="small-12 columns">
+      <div class="row">
+        <div class="small-7 columns">
+          <dl class="footer-links__tripple sub-nav">
+            <dd>
+            <a class="footer-links--anker" href="http://fiona-dev.uni-frankfurt.de/de">
+              <i class="fa fa-angle-right"></i>
+              Die Goethe-Universität Frankfurt am Main
+            </a>
+            </dd>
+            <dd>
+            <a class="footer-links--anker" href="http://fiona-dev.uni-frankfurt.de/impressum">
+              <i class="fa fa-angle-right"></i>
+              Impressum
+            </a>
+            </dd>
+            <dd>
+            <a class="footer-links--anker" href="http://fiona-dev.uni-frankfurt.de/en?locale=en" title="English Version">
+              <i class="fa fa-angle-right"></i>
+              Goethe-University English version
+            </a>
+            </dd>
+          </dl>
+        </div>
+        <div class="small-5 columns footer-links__double">
+          <dl class="copyright">
+            <dd>
+            <span>
+              © 2004-2013 Goethe-Universität Frankfurt am Main
+            </span>
+            </dd>
+          </dl>
+          <dl class="footer-links--poweredby">
+            <dd>
+            <a class="footer-links--anker" href="http://www.infopark.de/" title="Infopark.de">
+              |
+              <i class="fa fa-angle-right"></i>
+              powered by CMS Fiona
+            </a>
+            </dd>
+          </dl>
+        </div>
+      </div>
     </div>
   </div>
-</body>
-</html>
+  <div class="row band footer-nav">
+    <div class="small-11 large-centered columns">
+      <ul class="large-block-grid-5 small-block-grid-3">
+        <li>
+        <ul class="side-nav">
+          <li>
+          <h5>
+            <i class="fa fa-angle-right"></i>
+            <a href="http://fiona-dev.uni-frankfurt.de/muk">Aktuelles &amp; Presse</a>
+          </h5>
+          </li>
+          <li>
+          <i class="fa fa-angle-right"></i>
+          <a href="http://fiona-dev.uni-frankfurt.de/34459733/publikationen">Uni-Publikationen</a>
+          </li>
+          <li>
+          <i class="fa fa-angle-right"></i>
+          <a href="http://fiona-dev.uni-frankfurt.de/34831560/aktuell">Aktueller Jahresbericht</a>
+          </li>
+          <li>
+          <i class="fa fa-angle-right"></i>
+          <a href="http://fiona-dev.uni-frankfurt.de/44485327/home">UniReport</a>
+          </li>
+          <li>
+          <i class="fa fa-angle-right"></i>
+          <a href="http://fiona-dev.uni-frankfurt.de/34831594/aktuelle_Ausgabe">Forschung Frankfurt </a>
+          </li>
+
+        </ul>
+        </li>
+        <li>
+        <ul class="side-nav">
+          <li>
+          <h5>
+            <i class="fa fa-angle-right"></i>
+            <a href="http://www.uni-frankfurt.de/43662095/internationales">Internationales</a>
+          </h5>
+          </li>
+          <li>
+          <i class="fa fa-angle-right"></i>
+          <a href="http://fiona-dev.uni-frankfurt.de/44341711/incomings">Incomings</a>
+          </li>
+          <li>
+          <i class="fa fa-angle-right"></i>
+          <a href="http://fiona-dev.uni-frankfurt.de/38298572/erasmus_studyabroad">Erasmus / LLP</a>
+          </li>
+          <li>
+          <i class="fa fa-angle-right"></i>
+          <a href="http://fiona-dev.uni-frankfurt.de/45729918/Welcome">International Researchers/GWC</a>
+          </li>
+          <li>
+          <i class="fa fa-angle-right"></i>
+          <a href="http://www.grade.uni-frankfurt.de/index.html">Goethe Graduate Academy</a>
+          </li>
+
+        </ul>
+        </li>
+        <li>
+        <ul class="side-nav">
+          <li>
+          <h5>
+            <i class="fa fa-angle-right"></i>
+            <a href="http://fiona-dev.uni-frankfurt.de/39286311/stabsstelle">Forschung</a>
+          </h5>
+          </li>
+          <li>
+          <i class="fa fa-angle-right"></i>
+          <a href="http://fiona-dev.uni-frankfurt.de/39278818/wissenschaftlicher-nachwuchs">Nachwuchsförderung</a>
+          </li>
+          <li>
+          <i class="fa fa-angle-right"></i>
+          <a href="http://fiona-dev.uni-frankfurt.de/38647797/sonderforschungsbereiche">Sonderforschungsbereiche</a>
+          </li>
+          <li>
+          <i class="fa fa-angle-right"></i>
+          <a href="http://fiona-dev.uni-frankfurt.de/38647825/Exzellenzcluster">Exzellenzcluster</a>
+          </li>
+          <li>
+          <i class="fa fa-angle-right"></i>
+          <a href="http://fiona-dev.uni-frankfurt.de/39249864/eu-foerderung">EU-Förderung</a>
+          </li>
+
+        </ul>
+        </li>
+        <li>
+        <ul class="side-nav">
+          <li>
+          <h5>
+            <i class="fa fa-angle-right"></i>
+            <a href="http://www2.uni-frankfurt.de/40086055/studservice">Studien-Service-Center</a>
+          </h5>
+          </li>
+          <li>
+          <i class="fa fa-angle-right"></i>
+          <a href="http://fiona-dev.uni-frankfurt.de/36735485/zsb">Zentrale Studienberatung</a>
+          </li>
+          <li>
+          <i class="fa fa-angle-right"></i>
+          <a href="http://fiona-dev.uni-frankfurt.de/36192867/studierendensekretariat">Studierendensekretariat</a>
+          </li>
+          <li>
+          <i class="fa fa-angle-right"></i>
+          <a href="http://fiona-dev.uni-frankfurt.de/34789061/studienangebot">Studienangebot</a>
+          </li>
+          <li>
+          <i class="fa fa-angle-right"></i>
+          <a href="http://fiona-dev.uni-frankfurt.de/34789085/bewerbung">Bewerbung</a>
+          </li>
+
+        </ul>
+        </li>
+        <li>
+        <ul class="side-nav">
+          <li>
+          <h5>
+            <i class="fa fa-angle-right"></i>
+            <a href="http://fiona-dev.uni-frankfurt.de/37318133/goethe-universitaet">Über die Universität</a>
+          </h5>
+          </li>
+          <li>
+          <i class="fa fa-angle-right"></i>
+          <a href="http://fiona-dev.uni-frankfurt.de/36993228/praesidium">Präsidium</a>
+          </li>
+          <li>
+          <i class="fa fa-angle-right"></i>
+          <a href="http://fiona-dev.uni-frankfurt.de/38072330/geschichte">Geschichte</a>
+          </li>
+          <li>
+          <i class="fa fa-angle-right"></i>
+          <a href="http://fiona-dev.uni-frankfurt.de/38072362/standorte">Standorte</a>
+          </li>
+          <li>
+          <i class="fa fa-angle-right"></i>
+          <a href="http://fiona-dev.uni-frankfurt.de/38072376/zahlen_fakten">Zahlen und Fakten</a>
+          </li>
+
+        </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<!-- / Footer Desktop - Mobile-View Accordion -->
+<footer class="hide-for-medium-up">
+  <div class="section-container footer-nav" data-options="one_up: false" data-section="accordion">
+    <section>
+      <p class="title" data-section-title="Aktuelles &amp; Presse">
+      <a href="http://fiona-dev.uni-frankfurt.de/54423261/Testseiten#">
+        <i class="fa fa-angle-right">
+          <span>
+            Aktuelles &amp; Presse
+          </span>
+        </i>
+        <i class="fa fa-angle-down">
+          <span>
+            Aktuelles &amp; Presse
+          </span>
+        </i>
+      </a>
+      </p>
+      <div class="content" data-section-content="Aktuelles &amp; Presse">
+        <ul class="list--no-styles">
+          <li>
+          <a href="http://fiona-dev.uni-frankfurt.de/muk"><i class="fa fa-angle-right">
+              <span>
+                Aktuelles und Presse
+              </span>
+            </i>
+          </a></li>
+          <li>
+          <a href="http://fiona-dev.uni-frankfurt.de/34459733/publikationen"><i class="fa fa-angle-right">
+              <span>
+                Uni-Publikationen
+              </span>
+            </i>
+          </a></li>
+          <li>
+          <a href="http://fiona-dev.uni-frankfurt.de/34831560/aktuell"><i class="fa fa-angle-right">
+              <span>
+                Aktueller Jahresbericht
+              </span>
+            </i>
+          </a></li>
+          <li>
+          <a href="http://fiona-dev.uni-frankfurt.de/44485327/home"><i class="fa fa-angle-right">
+              <span>
+                UniReport
+              </span>
+            </i>
+          </a></li>
+          <li>
+          <a href="http://fiona-dev.uni-frankfurt.de/34831594/aktuelle_Ausgabe"><i class="fa fa-angle-right">
+              <span>
+                Forschung Frankfurt 
+              </span>
+            </i>
+          </a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <p class="title" data-section-title="Internationales">
+      <a href="http://fiona-dev.uni-frankfurt.de/54423261/Testseiten#">
+        <i class="fa fa-angle-right">
+          <span>
+            Internationales
+          </span>
+        </i>
+        <i class="fa fa-angle-down">
+          <span>
+            Internationales
+          </span>
+        </i>
+      </a>
+      </p>
+      <div class="content" data-section-content="Internationales">
+        <ul class="list--no-styles">
+          <li>
+          <a href="http://www.uni-frankfurt.de/43662095/internationales"><i class="fa fa-angle-right">
+              <span>
+                Internationales
+              </span>
+            </i>
+          </a></li>
+          <li>
+          <a href="http://fiona-dev.uni-frankfurt.de/44341711/incomings"><i class="fa fa-angle-right">
+              <span>
+                Incomings
+              </span>
+            </i>
+          </a></li>
+          <li>
+          <a href="http://fiona-dev.uni-frankfurt.de/38298572/erasmus_studyabroad"><i class="fa fa-angle-right">
+              <span>
+                Erasmus / LLP
+              </span>
+            </i>
+          </a></li>
+          <li>
+          <a href="http://fiona-dev.uni-frankfurt.de/45729918/Welcome"><i class="fa fa-angle-right">
+              <span>
+                International Researchers/GWC
+              </span>
+            </i>
+          </a></li>
+          <li>
+          <a href="http://www.grade.uni-frankfurt.de/index.html"><i class="fa fa-angle-right">
+              <span>
+                Goethe Graduate Academy
+              </span>
+            </i>
+          </a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <p class="title" data-section-title="Forschung">
+      <a href="http://fiona-dev.uni-frankfurt.de/54423261/Testseiten#">
+        <i class="fa fa-angle-right">
+          <span>
+            Forschung
+          </span>
+        </i>
+        <i class="fa fa-angle-down">
+          <span>
+            Forschung
+          </span>
+        </i>
+      </a>
+      </p>
+      <div class="content" data-section-content="Forschung">
+        <ul class="list--no-styles">
+          <li>
+          <a href="http://fiona-dev.uni-frankfurt.de/39286311/stabsstelle"><i class="fa fa-angle-right">
+              <span>
+                Forschung
+              </span>
+            </i>
+          </a></li>
+          <li>
+          <a href="http://fiona-dev.uni-frankfurt.de/39278818/wissenschaftlicher-nachwuchs"><i class="fa fa-angle-right">
+              <span>
+                Nachwuchsförderung
+              </span>
+            </i>
+          </a></li>
+          <li>
+          <a href="http://fiona-dev.uni-frankfurt.de/38647797/sonderforschungsbereiche"><i class="fa fa-angle-right">
+              <span>
+                Sonderforschungsbereiche
+              </span>
+            </i>
+          </a></li>
+          <li>
+          <a href="http://fiona-dev.uni-frankfurt.de/38647825/Exzellenzcluster"><i class="fa fa-angle-right">
+              <span>
+                Exzellenzcluster
+              </span>
+            </i>
+          </a></li>
+          <li>
+          <a href="http://fiona-dev.uni-frankfurt.de/39249864/eu-foerderung"><i class="fa fa-angle-right">
+              <span>
+                EU-Förderung
+              </span>
+            </i>
+          </a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <p class="title" data-section-title="Studien-Service-Center">
+      <a href="http://fiona-dev.uni-frankfurt.de/54423261/Testseiten#">
+        <i class="fa fa-angle-right">
+          <span>
+            Studien-Service-Center
+          </span>
+        </i>
+        <i class="fa fa-angle-down">
+          <span>
+            Studien-Service-Center
+          </span>
+        </i>
+      </a>
+      </p>
+      <div class="content" data-section-content="Studien-Service-Center">
+        <ul class="list--no-styles">
+          <li>
+          <a href="http://www2.uni-frankfurt.de/40086055/studservice"><i class="fa fa-angle-right">
+              <span>
+                Studien-Service-Center
+              </span>
+            </i>
+          </a></li>
+          <li>
+          <a href="http://fiona-dev.uni-frankfurt.de/36735485/zsb"><i class="fa fa-angle-right">
+              <span>
+                Zentrale Studienberatung
+              </span>
+            </i>
+          </a></li>
+          <li>
+          <a href="http://fiona-dev.uni-frankfurt.de/36192867/studierendensekretariat"><i class="fa fa-angle-right">
+              <span>
+                Studierendensekretariat
+              </span>
+            </i>
+          </a></li>
+          <li>
+          <a href="http://fiona-dev.uni-frankfurt.de/34789061/studienangebot"><i class="fa fa-angle-right">
+              <span>
+                Studienangebot
+              </span>
+            </i>
+          </a></li>
+          <li>
+          <a href="http://fiona-dev.uni-frankfurt.de/34789085/bewerbung"><i class="fa fa-angle-right">
+              <span>
+                Bewerbung
+              </span>
+            </i>
+          </a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <p class="title" data-section-title="Über die Universität">
+      <a href="http://fiona-dev.uni-frankfurt.de/54423261/Testseiten#">
+        <i class="fa fa-angle-right">
+          <span>
+            Über die Universität
+          </span>
+        </i>
+        <i class="fa fa-angle-down">
+          <span>
+            Über die Universität
+          </span>
+        </i>
+      </a>
+      </p>
+      <div class="content" data-section-content="Über die Universität">
+        <ul class="list--no-styles">
+          <li>
+          <a href="http://fiona-dev.uni-frankfurt.de/37318133/goethe-universitaet"><i class="fa fa-angle-right">
+              <span>
+                Über die Universität
+              </span>
+            </i>
+          </a></li>
+          <li>
+          <a href="http://fiona-dev.uni-frankfurt.de/36993228/praesidium"><i class="fa fa-angle-right">
+              <span>
+                Präsidium
+              </span>
+            </i>
+          </a></li>
+          <li>
+          <a href="http://fiona-dev.uni-frankfurt.de/38072330/geschichte"><i class="fa fa-angle-right">
+              <span>
+                Geschichte
+              </span>
+            </i>
+          </a></li>
+          <li>
+          <a href="http://fiona-dev.uni-frankfurt.de/38072362/standorte"><i class="fa fa-angle-right">
+              <span>
+                Standorte
+              </span>
+            </i>
+          </a></li>
+          <li>
+          <a href="http://fiona-dev.uni-frankfurt.de/38072376/zahlen_fakten"><i class="fa fa-angle-right">
+              <span>
+                Zahlen und Fakten
+              </span>
+            </i>
+          </a></li>
+        </ul>
+      </div>
+    </section>
+
+  </div>
+  <div class="section-container footer-links" data-options="one_up: false" data-section="accordion">
+    <section>
+      <p class="title" data-section-title="Webmail">
+      <a href="http://webmail.uni-frankfurt.de/">
+        Webmail
+      </a>
+      </p>
+    </section>
+    <section>
+      <p class="title" data-section-title="Beschäftigte">
+      <a href="http://www2.uni-frankfurt.de/intranet">
+        Beschäftigte
+      </a>
+      </p>
+    </section>
+    <section>
+      <p class="title" data-section-title="Sitemap">
+      <a href="http://www2.uni-frankfurt.de/sitemap">
+        Sitemap
+      </a>
+      </p>
+    </section>
+    <section>
+      <p class="title" data-section-title="Die Goethe Uni">
+      <a href="http://fiona-dev.uni-frankfurt.de/de">
+        Die Goethe-Universität Frankfurt am Main
+      </a>
+      </p>
+    </section>
+    <section>
+      <p class="title" data-section-title="Impressum">
+      <a href="http://fiona-dev.uni-frankfurt.de/impressum">
+        Impressum
+      </a>
+      </p>
+    </section>
+    <section>
+      <p class="title" data-section-title="English Version">
+      <a href="http://fiona-dev.uni-frankfurt.de/en?locale=en" title="English Version">
+        Goethe-University English version
+      </a>
+      </p>
+    </section>
+  </div>
+  <div class="small-12 columns">
+    <dl class="copyright">
+      <dd>
+      <span>
+        © 2004-2013 Goethe-Universität Frankfurt am Main
+      </span>
+      <a href="http://www.infopark.de/" title="Infopark.de">
+        |
+        <i class="fa fa-angle-right"></i>
+        powered by CMS Fiona
+      </a>
+      </dd>
+    </dl>
+  </div>
+</footer>
+
+
+<!--[if IE]> </div> <![endif]-->
+
+
+<!--[if lt IE 9]>
+
+<![endif]-->
+
+
+</body></html>

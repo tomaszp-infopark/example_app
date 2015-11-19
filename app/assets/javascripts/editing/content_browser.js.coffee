@@ -8,3 +8,7 @@ scrivito.on 'load', ->
           icon: 'image'
         Download:
           icon: 'generic'
+        Page:
+          icon: 'text'
+        Homepage:
+          icon: 'link'

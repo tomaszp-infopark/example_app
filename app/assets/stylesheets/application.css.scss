@@ -1,45 +1,12 @@
-@import "bootstrap-sprockets";
-@import "bootstrap";
-@import "scrivito";
 @import "fiona7";
+@import "font-awesome";
+@import "uniffm";
 
-.image-widget { max-width: 100% }
-
-/* Sticky footer */
-html, body {
-  height: 100%;
+/* line 5, /Users/tprzedmojski/Projects/Fiona7/gem/submodules/example_app/app/assets/stylesheets/uniffm.css */
+.sidebar.variation_2 .section-container > section .title span {
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Times New Roman, serif";
+  text-transform: uppercase;
+  float: left;
 }
-
-#wrap {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin: 0 auto -60px;
-  padding: 0 0 60px;
-
-  & > .container-fluid {
-    margin-bottom: 20px;
-  }
-}
-
-.footer {
-  height: 60px;
-  background-color: #f5f5f5;
-
-  p.text-muted { margin: 20px 0; }
-}
-
-.scrivito_editing_active .edit-inline { display: inline-block; }
-
-.scrivito_editing_active .image-replace-dropzone {
-  height: 75px;
-  line-height: 75px;
-  text-align: center;
-  vertical-align: middle;
-  border: 2px dashed #666;
-  color: #666;
-}
-
-.scrivito_dialog img { max-width: 100%; }
-
-i.icon.glyphicon { font-size: 65px; }

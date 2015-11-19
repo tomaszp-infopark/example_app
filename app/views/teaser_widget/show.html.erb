@@ -1,0 +1,11 @@
+<div class="teaser-content">
+  <div class="<%= widget.teaser_type%>">
+    <%= scrivito_image_tag widget, :image, {class: 'teaser-image'} %>
+    <!--<img alt="Bild_lesungen" height="200" src="/assets/bild1_portal.jpg" width="150">-->
+  </div>
+  <%= scrivito_tag :h3, widget, :title %>
+  <%= scrivito_tag :div, widget, :content %>
+  <% if (link=widget.related_link) %>
+    <%= link_to link.title, scrivito_path(link) %>
+  <% end %>
+</div>
