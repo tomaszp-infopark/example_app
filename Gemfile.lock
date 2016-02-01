@@ -1,12 +1,12 @@
 PATH
   remote: ../../
   specs:
-    infopark_fiona7 (0.70.0.4)
+    infopark_fiona7 (0.71.1.8)
       infopark_fiona_connector (= 7.0.1.beta2)
-      infopark_reactor (= 1.15.0.beta1)
+      infopark_reactor (>= 1.18.0)
       mini_magick
       rails (~> 4.2.2)
-      scrivito (= 0.70.0.rc1)
+      scrivito (= 0.71)
       scrivito_editors
       scrivito_sdk
 
@@ -93,7 +93,7 @@ GEM
       rails (~> 4.2)
       rake (>= 10.3.2)
       rsolr (~> 1.0.10)
-    infopark_reactor (1.15.0.beta1)
+    infopark_reactor (1.18.0)
       nokogiri
       rails (>= 3.0.10, < 4.3.0)
       term-ansicolor
@@ -111,7 +111,7 @@ GEM
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
     maruku (0.7.2)
-    memoist (0.12.0)
+    memoist (0.13.0)
     method_source (0.8.2)
     mime-types (1.25.1)
     mini_magick (4.3.6)
@@ -185,23 +185,23 @@ GEM
       sass (~> 3.2.2)
       sprockets (~> 2.8, < 3.0)
       sprockets-rails (~> 2.0)
-    scrivito (0.70.0.rc1)
+    scrivito (0.71.0)
       railties
-      scrivito_content_browser (= 0.70.0.rc1)
-      scrivito_editors (= 0.70.0.rc1)
-      scrivito_sdk (= 0.70.0.rc1)
-    scrivito_content_browser (0.70.0.rc1)
+      scrivito_content_browser (= 0.71.0)
+      scrivito_editors (= 0.71.0)
+      scrivito_sdk (= 0.71.0)
+    scrivito_content_browser (0.71.0)
       coffee-rails
       railties
-      scrivito_sdk (= 0.70.0.rc1)
-    scrivito_editors (0.70.0.rc1)
+      scrivito_sdk (= 0.71.0)
+    scrivito_editors (0.71.0)
       coffee-rails
       coffee-script-source (>= 1.9.1)
       jquery-ui-rails (>= 5.0.0)
       railties
-      scrivito_content_browser (= 0.70.0.rc1)
-      scrivito_sdk (= 0.70.0.rc1)
-    scrivito_sdk (0.70.0.rc1)
+      scrivito_content_browser (= 0.71.0)
+      scrivito_sdk (= 0.71.0)
+    scrivito_sdk (0.71.0)
       addressable (~> 2.3.2)
       diff-lcs (~> 1.2.5)
       hyp_diff (~> 0.0.4)
@@ -232,7 +232,7 @@ GEM
     thor (0.19.1)
     thread_safe (0.3.5)
     tilt (1.4.1)
-    tins (1.6.0)
+    tins (1.8.1)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     uglifier (2.7.1)
@@ -260,7 +260,6 @@ DEPENDENCIES
   rails
   rspec-rails
   sass-rails (~> 4.0.4)
-  scrivito (= 0.70.0.rc1)
   sdoc (~> 0.4.0)
   secure_headers
   uglifier (>= 1.3.0)

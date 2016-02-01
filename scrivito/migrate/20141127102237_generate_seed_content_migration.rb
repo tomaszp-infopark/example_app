@@ -72,7 +72,7 @@ class GenerateSeedContentMigration < ::Scrivito::Migration
 
   def create_history_blog
     Blog.create(
-      _path: "/#{random_path_component}",
+      _path: "/history_blog",
       title: 'History Blog'
     )
   end
@@ -90,7 +90,7 @@ class GenerateSeedContentMigration < ::Scrivito::Migration
     )
 
     BlogPost.create(
-      _path: "#{blog.path}/#{random_path_component}",
+      _path: "#{blog.path}/the_founding",
       title: 'The Founding of Berlin',
       published_at: Date.new(1237, 1, 1),
       author_name: 'wikipedia',
@@ -111,7 +111,7 @@ class GenerateSeedContentMigration < ::Scrivito::Migration
     )
 
     BlogPost.create(
-      _path: "#{blog.path}/#{random_path_component}",
+      _path: "#{blog.path}/berlin_wall",
       title: 'Construction of the Berlin Wall',
       published_at: Date.new(1961, 8, 13),
       author_name: 'wikipedia',
@@ -132,7 +132,7 @@ class GenerateSeedContentMigration < ::Scrivito::Migration
     )
 
     BlogPost.create(
-      _path: "#{blog.path}/#{random_path_component}",
+      _path: "#{blog.path}/reunification",
       title: 'Reunification of Berlin',
       published_at: Date.new(1989, 11, 9),
       author_name: 'wikipedia',
@@ -153,7 +153,7 @@ class GenerateSeedContentMigration < ::Scrivito::Migration
     )
 
     Page.create(
-      _path: "/#{random_path_component}",
+      _path: "/capital_city",
       title: 'Capital City',
       body: [main_columns]
     )
