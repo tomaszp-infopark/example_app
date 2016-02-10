@@ -81,7 +81,7 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
-    memoist (0.13.0)
+    memoist (0.14.0)
     method_source (0.8.2)
     mime-types (2.6.1)
     mini_portile (0.6.2)
@@ -148,20 +148,20 @@ GEM
       sass (~> 3.2.2)
       sprockets (~> 2.8, < 3.0)
       sprockets-rails (~> 2.0)
-    scrivito (1.0.0)
+    scrivito (1.1.1)
       railties
-      scrivito_content_browser (= 1.0.0)
-      scrivito_editors (= 1.0.0)
-      scrivito_sdk (= 1.0.0)
-    scrivito_content_browser (1.0.0)
+      scrivito_content_browser (= 1.1.1)
+      scrivito_editors (= 1.1.1)
+      scrivito_sdk (= 1.1.1)
+    scrivito_content_browser (1.1.1)
       railties
-      scrivito_sdk (= 1.0.0)
-    scrivito_editors (1.0.0)
+      scrivito_sdk (= 1.1.1)
+    scrivito_editors (1.1.1)
       jquery-ui-rails (>= 5.0.0)
       railties
-      scrivito_content_browser (= 1.0.0)
-      scrivito_sdk (= 1.0.0)
-    scrivito_sdk (1.0.0)
+      scrivito_content_browser (= 1.1.1)
+      scrivito_sdk (= 1.1.1)
+    scrivito_sdk (1.1.1)
       addressable (~> 2.3)
       diff-lcs (~> 1.2)
       hyp_diff (~> 0.0.4)
@@ -217,7 +217,7 @@ DEPENDENCIES
   rails
   rspec-rails
   sass-rails (~> 4.0.4)
-  scrivito (= 1.0.0)
+  scrivito (= 1.1.1)
   sdoc (~> 0.4.0)
   secure_headers
   spring
