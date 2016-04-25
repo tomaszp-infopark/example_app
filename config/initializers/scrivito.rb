@@ -1,4 +1,3 @@
-# Unsupported ATM!
-#Scrivito.configure do |config|
-#  config.inject_preset_routes = false
-#end
+Scrivito.configure do |config|
+  config.inject_preset_routes = false
+end
