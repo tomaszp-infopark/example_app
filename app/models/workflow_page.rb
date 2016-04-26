@@ -1,0 +1,2 @@
+class WorkflowPage < Page
+end

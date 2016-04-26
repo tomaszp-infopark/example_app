@@ -1,0 +1,2 @@
+class WorkflowPageController < PageController 
+end
