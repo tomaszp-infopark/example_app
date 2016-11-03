@@ -1,7 +1,7 @@
 PATH
   remote: ../../
   specs:
-    infopark_fiona7 (1.5.2.0.0.pre.beta2)
+    infopark_fiona7 (1.5.2.0.0)
       infopark_fiona_connector (= 7.0.1.beta2)
       infopark_reactor (>= 1.22.4)
       mini_magick

@@ -8,3 +8,4 @@
 .env
 config/database.yml
 config/initializers/reactor.rb
+Gemfile.lock
