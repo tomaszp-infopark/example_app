@@ -6,6 +6,7 @@ gem 'coffee-rails'
 gem 'sass-rails'
 
 gem 'jquery-rails'
+gem 'jquery-ui-rails', '~> 5.0.0'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'secure_headers', '~> 2.2.3'
