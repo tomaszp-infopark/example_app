@@ -1,1 +1,9 @@
 <%= render 'shared/edit_page_title', obj: @obj %>
+
+<%= scrivito_details_for 'test_attr_reflist' do %>
+  <%= scrivito_tag :div, @obj, :test_attr_reflist %>
+<% end %>
+
+<%= scrivito_details_for 'test_attr_ref' do %>
+  <%= scrivito_tag :div, @obj, :test_attr_ref %>
+<% end %>
