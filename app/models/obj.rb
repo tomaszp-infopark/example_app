@@ -10,6 +10,6 @@ class Obj < Scrivito::BasicObj
   end
 
   def description_for_editor
-    strip_tags(menu_title)
+    strip_tags(menu_title).presence || super
   end
 end
