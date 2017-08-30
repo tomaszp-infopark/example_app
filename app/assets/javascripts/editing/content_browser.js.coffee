@@ -10,3 +10,5 @@ scrivito.on 'load', ->
           icon: 'generic'
         Page:
           icon: 'page'
+        WorkflowPage:
+          icon: 'page'
