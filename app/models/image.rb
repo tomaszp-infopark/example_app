@@ -13,6 +13,6 @@ class Image < Obj
   end
 
   def menu_title
-    self[:title].presence || name
+    self[:title].presence
   end
 end
